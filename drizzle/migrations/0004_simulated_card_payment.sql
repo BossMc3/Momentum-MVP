@@ -1,0 +1,1 @@
+ALTER TABLE public.investment_contributions ADD COLUMN strategy text NOT NULL DEFAULT 'balanced', ADD COLUMN card_last4 text, ADD COLUMN payment_status text NOT NULL DEFAULT 'confirmed';

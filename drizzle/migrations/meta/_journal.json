@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793206697920,
+      "tag": "0000_momentum_private_accounts",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793207040754,
+      "tag": "0001_secure_profile_trigger",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793208187228,
+      "tag": "0002_investment_contributions",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1793209275037,
+      "tag": "0003_friends_invites_attacks",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1793211134715,
+      "tag": "0004_simulated_card_payment",
+      "breakpoints": true
+    }
+  ]
+}
