@@ -14,25 +14,25 @@ Majoritatea tinerilor din România resimt anxietate și paralizie decizională c
 
 ---
 
-## 🎯 Ce rezolvă Momentum (Criteriile Jurizării)
+## 🎯 Ce rezolvă Momentum
 
-### 1. Who it serves & The Problem[cite: 1]
+### 1. Who it serves & The Problem
 * **Public țintă:** Generația Z și tinerii profesioniști din România aflați la început de carieră.
 * **Problema:** Reticența față de limbajul bancar tehnic, lipsa educației financiare aplicate și tendința de consum impulsiv pe platforme de delivery și ride-sharing.
 * **Soluția:** Un strat de gamificare accesibil care face din economisire un obicei recurent și tangibil vizual.
 
-### 2. End-to-End User Experience[cite: 1]
+### 2. End-to-End User Experience
 1. **Analiza Extrasului de Cont:** Utilizatorul încarcă un fișier PDF/CSV cu tranzacțiile bancare (sau folosește butonul *Încarcă Extras Demo*). Algoritmul identifică tiparele recurente de consum (Starbucks, 5 to go, Tazz, Glovo, Bolt, Uber).
 2. **Recomandarea Inteligentă:** Sistemul calculează impactul unei reduceri de doar 25-30% din aceste cheltuieli și prezintă proiecția acumulării prin dobânda compusă pe 10–30 de ani.
 3. **Simularea Micro-Investiției:** Cu un singur click, diferența economisită este alocată virtual în instrumente garantate, iar utilizatorul primește tokeni de construcție.
 4. **Dezvoltarea Orașului Izometric:** Tokenii sunt folosiți pentru plasarea și evoluția clădirilor pe o hartă 3D izometrică (case, cafenele, infrastructură).
 5. **Loss Aversion (Aversiunea la Pierdere):** Retragerea prematură a banilor din fond declanșează degradarea vizuală a orașului, descurajând deciziile impulsive de cheltuire a economiilor.
 
-### 3. De ce este relevant în România[cite: 1]
+### 3. De ce este relevant în România
 * România prezintă un contrast puternic: un consum ridicat în comerțul electronic și livrări rapide, combinat cu o pondere foarte redusă a populației active care investește.
 * Momentum nu propune instrumente speculative volatile, ci leagă stilul de viață cotidian de mecanisme locale sigure: **Titlurile de Stat Fidelis/Tezaur** (nepozitabile) și fondurile diversificate.
 
-### 4. Arhitectură, Ipoteze și Conformitate Legală[cite: 1]
+### 4. Arhitectură, Ipoteze și Conformitate Legală
 * **Arhitectură de tip Pass-Through:** Aplicația acționează exclusiv ca un motor comportamental (Behavioral Layer) peste infrastructura bancară. În scenariul de producție complet, transferurile sunt intermediate direct de Stripe și protocoalele Open Banking (PSD2).
 * **Fără Risc Custodial:** Momentum nu colectează și nu reține fondurile utilizatorilor în conturi proprii, eliminând necesitatea autorizării ca fond de investiții sau instituție de credit de către ASF/BNR.
 * **Model de Monetizare Sustenabil:** Parteneriate B2B / Lead Generation cu băncile partenere (comision la deschiderea de produse de economisire) și model B2C Freemium pentru personalizări vizuale avansate în joc.
