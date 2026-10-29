@@ -1,44 +1,67 @@
-# Welcome to your Lovable project
+# 🏝️ Momentum  Empire of Wealth
+> **Stripe Hackathon Challenge: Rethinking Financial Futures**  
+> *Transformarea micilor impulsuri zilnice în securitate financiară pe termen lung prin gamificare comportamentală.*
 
-This project was built with [Lovable](https://lovable.dev).
+🔗 **Live Demo Application:** [https://momentum-nexxtsummit.lovable.app](https://momentum-nexxtsummit.lovable.app)
 
-## Build with Lovable
+---
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+## 📌 Executive Summary
+Majoritatea tinerilor din România resimt anxietate și paralizie decizională când vine vorba de investiții sau pensie[cite: 1]. Deși adopția plăților digitale și a serviciilor de livrare/ride-sharing este la un nivel record, participarea la instrumente financiare sigure rămâne printre cele mai scăzute din Europa.
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+**Momentum** rezolvă această problemă printr-o abordare de **Behavioral Wealth**: 
+În loc să ceară utilizatorului un efort de economisire rigid, aplicația analizează tranzacțiile din extrasele de cont bancar, identifică cheltuielile repetitive („plăcerile vinovate” precum cafelele sau comenzile de mâncare) și propune un compromis blând. Reducerea parțială a acestor obiceiuri eliberează fonduri direcționate automat spre instrumente cu randament stabil (ex: Titluri de Stat Tezaur/Fidelis sau indici bursieri), recompensând progresul cu tokeni pentru construirea unui regat izometric interactiv.
 
-## Development
+---
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+## 🎯 Ce rezolvă Momentum (Criteriile Jurizării)
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+### 1. Who it serves & The Problem[cite: 1]
+* **Public țintă:** Generația Z și tinerii profesioniști din România aflați la început de carieră.
+* **Problema:** Reticența față de limbajul bancar tehnic, lipsa educației financiare aplicate și tendința de consum impulsiv pe platforme de delivery și ride-sharing.
+* **Soluția:** Un strat de gamificare accesibil care face din economisire un obicei recurent și tangibil vizual.
+
+### 2. End-to-End User Experience[cite: 1]
+1. **Analiza Extrasului de Cont:** Utilizatorul încarcă un fișier PDF/CSV cu tranzacțiile bancare (sau folosește butonul *Încarcă Extras Demo*). Algoritmul identifică tiparele recurente de consum (Starbucks, 5 to go, Tazz, Glovo, Bolt, Uber).
+2. **Recomandarea Inteligentă:** Sistemul calculează impactul unei reduceri de doar 25-30% din aceste cheltuieli și prezintă proiecția acumulării prin dobânda compusă pe 10–30 de ani.
+3. **Simularea Micro-Investiției:** Cu un singur click, diferența economisită este alocată virtual în instrumente garantate, iar utilizatorul primește tokeni de construcție.
+4. **Dezvoltarea Orașului Izometric:** Tokenii sunt folosiți pentru plasarea și evoluția clădirilor pe o hartă 3D izometrică (case, cafenele, infrastructură).
+5. **Loss Aversion (Aversiunea la Pierdere):** Retragerea prematură a banilor din fond declanșează degradarea vizuală a orașului, descurajând deciziile impulsive de cheltuire a economiilor.
+
+### 3. De ce este relevant în România[cite: 1]
+* România prezintă un contrast puternic: un consum ridicat în comerțul electronic și livrări rapide, combinat cu o pondere foarte redusă a populației active care investește.
+* Momentum nu propune instrumente speculative volatile, ci leagă stilul de viață cotidian de mecanisme locale sigure: **Titlurile de Stat Fidelis/Tezaur** (nepozitabile) și fondurile diversificate.
+
+### 4. Arhitectură, Ipoteze și Conformitate Legală[cite: 1]
+* **Arhitectură de tip Pass-Through:** Aplicația acționează exclusiv ca un motor comportamental (Behavioral Layer) peste infrastructura bancară. În scenariul de producție complet, transferurile sunt intermediate direct de Stripe și protocoalele Open Banking (PSD2).
+* **Fără Risc Custodial:** Momentum nu colectează și nu reține fondurile utilizatorilor în conturi proprii, eliminând necesitatea autorizării ca fond de investiții sau instituție de credit de către ASF/BNR.
+* **Model de Monetizare Sustenabil:** Parteneriate B2B / Lead Generation cu băncile partenere (comision la deschiderea de produse de economisire) și model B2C Freemium pentru personalizări vizuale avansate în joc.
+
+---
+
+## 🛠️ Stack Tehnic & Componente
+* **Frontend:** React, TypeScript, Tailwind CSS, Lucide Icons, Framer Motion.
+* **Map Engine:** Grid izometric interactiv stilizat cu clădiri vectoriale SVG adaptabile la stări de degradare și upgrade.
+* **Parsing Engine:** Parsare automată client-side a fișierelor bancare structurate (inclusiv simulator de flux demonstrativ).
+* **Persistență:** LocalStorage State Engine pentru păstrarea layout-ului orașului, a tranzacțiilor și a tokenilor între sesiuni.
+
+---
+
+## 🚀 Rulare Locală
+
+Pentru a rula proiectul pe propriul computer:
+
+```bash
+# 1. Clonare repository
+git clone [https://github.com/USERNAME/NUME-REPO.git](https://github.com/USERNAME/NUME-REPO.git)
+cd NUME-REPO
+
+# 2. Instalare dependențe
+bun install
+# sau
+npm install
+
+# 3. Pornire server de dezvoltare
+bun dev
+# sau
 npm run dev
-```
-
-`npm run dev` automatically creates `.env` from the committed `.env.example`
-if `.env` is missing. The example contains only the public connection settings,
-not secret keys. Existing `.env` files are never overwritten. Keep `.env` ignored
-by Git; keep `.env.example` and `scripts/` in the repository.
-
-After pulling this update, stop any running dev server with Ctrl+C, then run
-`npm run dev` again and open the localhost address printed in the terminal.
-If you already have an incomplete `.env`, back it up and copy `.env.example`
-to `.env` manually (`copy .env.example .env` on Windows, `cp .env.example .env`
-on macOS/Linux). Restart the dev server after changing environment settings.
-
-This setup fixes missing connection settings; it does not enable Google or
-Lovable OAuth on localhost or provision privileged server credentials required
-by multiplayer operations. Never put private credentials in `VITE_*` variables.
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
