@@ -15,3 +15,4 @@
 - Real statement parsing and empty Momentum progress live in src/lib/momentum.ts with adjacent tests; explicit parsed RON amounts are required, never synthetic fallback values.
 - Original statements are parsed locally and only aggregate analyses are saved; city points represent saving opportunities, not verified savings, deposits, or investments.
 - Multiplayer: friendships, referrals, point grants and attacks are Cloud tables; cross-user reads/writes (friend cities, attacks, invite rewards) go through server functions using the admin client only after verifying friendship — users' RLS stays owner-only.
+- Local development initializes a missing .env from the public .env.example through npm predev; the Node-only setup script stays outside src and never overwrites existing settings — fresh clones start without importing filesystem code into the Worker app.
