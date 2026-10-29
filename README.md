@@ -1,4 +1,4 @@
-# 🏝️ Momentum  Empire of Wealth
+# 🏝️ Momentum
 > **Stripe Hackathon Challenge: Rethinking Financial Futures**  
 > *Transformarea micilor impulsuri zilnice în securitate financiară pe termen lung prin gamificare comportamentală.*
 
@@ -7,7 +7,7 @@
 ---
 
 ## 📌 Executive Summary
-Majoritatea tinerilor din România resimt anxietate și paralizie decizională când vine vorba de investiții sau pensie[cite: 1]. Deși adopția plăților digitale și a serviciilor de livrare/ride-sharing este la un nivel record, participarea la instrumente financiare sigure rămâne printre cele mai scăzute din Europa.
+Majoritatea tinerilor din România resimt anxietate și paralizie decizională când vine vorba de investiții sau pensie. Deși adopția plăților digitale și a serviciilor de livrare/ride-sharing este la un nivel record, participarea la instrumente financiare sigure rămâne printre cele mai scăzute din Europa.
 
 **Momentum** rezolvă această problemă printr-o abordare de **Behavioral Wealth**: 
 În loc să ceară utilizatorului un efort de economisire rigid, aplicația analizează tranzacțiile din extrasele de cont bancar, identifică cheltuielile repetitive („plăcerile vinovate” precum cafelele sau comenzile de mâncare) și propune un compromis blând. Reducerea parțială a acestor obiceiuri eliberează fonduri direcționate automat spre instrumente cu randament stabil (ex: Titluri de Stat Tezaur/Fidelis sau indici bursieri), recompensând progresul cu tokeni pentru construirea unui regat izometric interactiv.
