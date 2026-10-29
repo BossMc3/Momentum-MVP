@@ -6,6 +6,17 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import "@lovable.dev/cloud-auth-js/styles.css";
 
+function authErrorMessage(err: unknown): string {
+  const msg = (err as { message?: string })?.message?.toLowerCase() ?? "";
+  if (msg.includes("weak") || msg.includes("pwned") || msg.includes("easy to guess")) return "Parola este prea ușor de ghicit (apare în liste de parole compromise). Alege una mai puternică, de ex. cu cuvinte, cifre și simboluri.";
+  if (msg.includes("already registered") || msg.includes("already exists")) return "Există deja un cont cu acest email. Conectează-te sau resetează parola.";
+  if (msg.includes("invalid login") || msg.includes("invalid credentials")) return "Email sau parolă greșite.";
+  if (msg.includes("email not confirmed")) return "Confirmă mai întâi adresa de email din mesajul primit, apoi conectează-te.";
+  if (msg.includes("rate limit") || msg.includes("too many")) return "Prea multe încercări. Așteaptă câteva minute și încearcă din nou.";
+  if (msg.includes("fetch") || msg.includes("network")) return "Nu se poate contacta serverul. Verifică conexiunea și fișierul .env.";
+  return "Operațiunea nu a reușit. Verifică datele și încearcă din nou.";
+}
+
 export function AuthForm() {
   const [mode, setMode] = useState<"login" | "signup" | "reset">("login");
   const [email, setEmail] = useState(""); const [password, setPassword] = useState(""); const [name, setName] = useState("");
@@ -22,11 +33,17 @@ export function AuthForm() {
       } else {
         const { error } = await supabase.auth.signInWithPassword({ email, password }); if (error) throw error;
       }
-    } catch { setMessage("Operațiunea nu a reușit. Verifică datele și confirmarea emailului, apoi încearcă din nou."); }
+    } catch (err) { setMessage(authErrorMessage(err)); }
     finally { setBusy(false); }
   }
   async function social(provider: "google" | "lovable") {
-    setBusy(true); setMessage("");
+    setMessage("");
+    const host = window.location.hostname;
+    if (host === "localhost" || host === "127.0.0.1") {
+      setMessage("Conectarea cu Google sau Lovable funcționează doar pe linkul aplicației (preview sau publicat), nu pe localhost. Aici folosește email și parolă.");
+      return;
+    }
+    setBusy(true);
     try { const res = await lovable.auth.signInWithOAuth(provider, { redirect_uri: window.location.origin }); if (res.error) setMessage("Conectarea nu a reușit. Încearcă din nou."); }
     catch { setMessage("Conectarea nu a reușit."); } finally { setBusy(false); }
   }
