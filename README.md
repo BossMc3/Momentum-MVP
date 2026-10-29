@@ -6,6 +6,27 @@
 
 ---
 
+## 📸 Prezentare Vizuală Aplicație
+
+<div align="center">
+  <img src="docs/MainPage.png" alt="Momentum Main Page - Orașul Tău" width="100%" />
+  <p><em>Panoul central Momentum: evaluarea cheltuielilor, încărcarea extrasului și regatul izometric evolutiv.</em></p>
+</div>
+
+<br/>
+
+| Autentificare & Securitate | Analiză & Obiceiuri Identificate |
+| :---: | :---: |
+| <img src="docs/Login.png" alt="Login Flow" width="400" /> | <img src="docs/HistoryTransactions.png" alt="Analiză Tranzacții" width="400" /> |
+| *Flux de acces facil (Open Banking / Social Auth)* | *Detecția automată a categoriilor de consum (Tazz, Bolt, Cafele)* |
+
+| Proiecție Financiară (Dobândă Compusă) | Dimensiune Socială & Co-op |
+| :---: | :---: |
+| <img src="docs/DashBoard.png" alt="Proiecție Dobândă Compusă" width="400" /> | <img src="docs/Friends.png" alt="Social & Friends" width="400" /> |
+| *Simularea randamentului pe termen lung (Titluri de stat / Bursă)* | *Mecanici sociale de retenție, interacțiune și atacuri amicale* |
+
+---
+
 ## 📌 Executive Summary
 Majoritatea tinerilor din România resimt anxietate și paralizie decizională când vine vorba de investiții sau pensie. Deși adopția plăților digitale și a serviciilor de livrare/ride-sharing este la un nivel record, participarea la instrumente financiare sigure rămâne printre cele mai scăzute din Europa.
 
