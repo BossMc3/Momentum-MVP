@@ -3,7 +3,8 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import logo from "@/assets/momentum-logo.jpeg.asset.json";
+import logoUrl from "@/assets/momentum-logo.jpeg";
+const logo = { url: logoUrl };
 export const Route = createFileRoute("/reset-password")({
   head: () => ({ meta: [{ title: "Resetează parola — Momentum" }, { name: "description", content: "Setează o parolă nouă pentru contul tău Momentum." }, { property: "og:title", content: "Resetează parola — Momentum" }, { property: "og:description", content: "Recuperează accesul la contul tău Momentum." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary" }] }),
   component: ResetPassword,
