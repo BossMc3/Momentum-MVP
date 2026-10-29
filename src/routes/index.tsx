@@ -18,7 +18,8 @@ import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YA
 import { getDashboard, importStatement, cityAction, confirmInvestment, saveProfile } from "@/lib/momentum.functions";
 import { supabase } from "@/integrations/supabase/client";
 import { claimInvite } from "@/lib/social.functions";
-import logo from "@/assets/momentum-logo.jpeg.asset.json";
+import logoUrl from "@/assets/momentum-logo.jpeg";
+const logo = { url: logoUrl };
 
 export const Route = createFileRoute("/")({
   head: () => ({ meta: [
